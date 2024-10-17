@@ -11,6 +11,11 @@
 - CORS - install in backend
 - add middleware and configurations origin and credentials
 - whenever we are making axios call, we need to pass{widthCredentials: true}
+- Install Redux toolkit
+- configure store //in appStore there will be reducer
+- Add Provider in the app level ~ Provide the store to the app
+- create user slice //in slice there will be reducers
+- add the slice to the appstore
 
 # CORS Error
 
