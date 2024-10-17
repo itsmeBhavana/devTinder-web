@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Body = () => {
   return (
-    <div>
+    <div data-theme="dark" className="h-screen">
       <NavBar />
       <Outlet />
       <Footer />
