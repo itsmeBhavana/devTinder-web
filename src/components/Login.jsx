@@ -19,7 +19,7 @@ const Login = () => {
           emailId,
           password,
         },
-        { widthCredentials: true }
+        { withCredentials: true }
       );
       dispatch(addUser(res.data));
       return navigate("/");

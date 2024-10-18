@@ -16,6 +16,10 @@
 - Add Provider in the app level ~ Provide the store to the app
 - create user slice //in slice there will be reducers
 - add the slice to the appstore
+- get profile api
+- should not be able to access other routes without login
+- If the token is not present, redirect the user to login page.
+- 
 
 # CORS Error
 
