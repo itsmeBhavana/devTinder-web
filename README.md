@@ -19,7 +19,7 @@
 - get profile api
 - should not be able to access other routes without login
 - If the token is not present, redirect the user to login page.
-- 
+- logout feature
 
 # CORS Error
 
