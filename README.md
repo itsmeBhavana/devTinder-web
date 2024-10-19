@@ -23,6 +23,7 @@
 - Edit Profile feature
 - show toast message on saving the profile
 - See all my connections
+- See all my connection requests 
 
 # CORS Error
 
