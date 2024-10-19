@@ -20,6 +20,9 @@
 - should not be able to access other routes without login
 - If the token is not present, redirect the user to login page.
 - logout feature
+- Edit Profile feature
+- show toast message on saving the profile
+- See all my connections
 
 # CORS Error
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { BASE_URL } from "../utils/constants";
+import { BASE_URL, DEFAULT_PHOTO_URL } from "../utils/constants";
 import axios from "axios";
 import { removeUser } from "../utils/userSlice";
 
@@ -38,7 +38,7 @@ const NavBar = () => {
                 <div className="w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    src={user.photoUrl || DEFAULT_PHOTO_URL}
                   />
                 </div>
               </div>
@@ -53,7 +53,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Settings</a>
+                  <Link to="/connections">Connections</Link>
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>
