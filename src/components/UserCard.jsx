@@ -1,15 +1,17 @@
 import React from "react";
+import { DEFAULT_PHOTO_URL } from "../utils/constants";
 
 const UserCard = ({ user }) => {
-  const { firstName, lastName, gender, age, about } = user;
+  const { firstName, lastName, gender, age, about, photoUrl } = user;
   console.log(user);
   return (
     <div className="card bg-base-300 w-96 shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
+        {photoUrl ? (
+          <img src={photoUrl} alt="Shoes" />
+        ) : (
+          <img src={DEFAULT_PHOTO_URL} alt="Shoes" />
+        )}
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
