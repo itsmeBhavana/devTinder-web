@@ -23,7 +23,6 @@ const Requests = () => {
 
   const fetchRequests = async () => {
     try {
-      if (requests) return;
       const res = await axios.get(BASE_URL + "/user/requests/received", {
         withCredentials: true,
       });
@@ -61,7 +60,9 @@ const Requests = () => {
                 {firstName + " " + lastName}
               </h2>
               {age && gender && <p>{age + ", " + gender}</p>}
-              <p>{about.length > 80 ? about.substring(0, 80) + "..." : about}</p>
+              <p>
+                {about.length > 80 ? about.substring(0, 80) + "..." : about}
+              </p>
             </div>
             <div>
               <button
