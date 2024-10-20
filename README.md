@@ -24,6 +24,8 @@
 - show toast message on saving the profile
 - See all my connections
 - See all my connection requests 
+- Accept/reject connection request
+- Sending/ignoring connect 
 
 # CORS Error
 

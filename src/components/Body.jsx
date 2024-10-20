@@ -29,7 +29,7 @@ const Body = () => {
     fetchUser();
   }, []);
   return (
-    <div data-theme="dark" className="h-screen">
+    <div data-theme="dark" className="h-full min-h-screen">
       <NavBar />
       <Outlet />
       <Footer />

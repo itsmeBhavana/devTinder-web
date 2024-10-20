@@ -22,7 +22,8 @@ const Connections = () => {
     fetchConnections();
   }, []);
   if (!connections) return;
-  if (connections.length === 0) return <h1>No Connections found</h1>;
+  if (connections.length === 0)
+    return <h1 className="flex justify-center my-10">No Connections found</h1>;
   return (
     <div className="my-10 text-center">
       <h1 className="font-bold text-white text-3xl"> Connections </h1>
@@ -30,7 +31,10 @@ const Connections = () => {
         const { _id, firstName, lastName, photoUrl, age, gender, about } =
           connection;
         return (
-          <div key={_id} className="flex p-4 rounded-lg bg-base-300 w-1/2 mx-auto m-4">
+          <div
+            key={_id}
+            className="flex p-4 rounded-lg bg-base-300 w-1/2 mx-auto m-4 items-center"
+          >
             <div>
               <img
                 alt="photo"
@@ -43,7 +47,9 @@ const Connections = () => {
                 {firstName + " " + lastName}
               </h2>
               {age && gender && <p>{age + ", " + gender}</p>}
-              <p>{about}</p>
+              <p>
+                {about.length > 80 ? about.substring(0, 80) + "..." : about}
+              </p>
             </div>
           </div>
         );
